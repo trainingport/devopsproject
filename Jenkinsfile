@@ -1,8 +1,8 @@
-node ('master') {
+hnode ('master') {
     
     stage('script-run') {
         
-       sh label: '', script: 'echo "Hello Everybody!!"'
+       echo "In script run"
     }
     
     stage('checkout') {
