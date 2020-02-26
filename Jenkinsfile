@@ -6,4 +6,7 @@ node ('master') {
     stage('end') {
         echo 'End of pipeline'
     }
+    stage('script run') {
+        sh label: '', script: 'pwd > file.txt'
+    }
 }
